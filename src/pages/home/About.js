@@ -9,6 +9,7 @@ function About() {
     "Bootstrap",
     "SAAS",
     "Tailwind CSS",
+    "JavaScript",
     "React",
     "Node",
     "Express",
@@ -47,10 +48,10 @@ function About() {
         </div>
       </div>
       <div className="py-5">
-        <h1 className="text-tertiary text-xl">
+        <h1 className="text-tertiary text-xl mb-10">
           Here are few technologies I've been working with recently:
         </h1>
-        <div className="flex flex-wrap justify-evenly gap-10 mt-5">
+        <div className="flex flex-wrap justify-between gap-10 mt-5">
         { skills.map((skill, index) => (
             <div className="border border-tertiary sm:w-[40%] sm:py-2 py-3 sm:px-5 px-10">
                 <h1 className="text-tertiary sm:text-sm sm:text-center">{skill}</h1>
