@@ -16,9 +16,6 @@ function Header() {
         Projects
       </p>
       <p className="text-secondary  hover:text-white text4xl font-semibold header">
-        Courses
-      </p>
-      <p className="text-secondary  hover:text-white text4xl font-semibold header">
         Contacts
       </p>
     </div>
