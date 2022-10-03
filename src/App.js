@@ -10,6 +10,7 @@ import {
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
 import Home from "./pages/home";
+import Admin from "./pages/admin";
 
 function App() {
   const { loading, portfolioData, reloadData } = useSelector(
@@ -47,6 +48,7 @@ function App() {
       {loading ? <Loader /> : null}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );

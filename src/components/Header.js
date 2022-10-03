@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="sm:hidden md:hidden lg:block p-5 flex justify-around header bg-primary">
+    <div className="sm:hidden md:hidden lg:block p-5 flex justify-around items-center header bg-primary">
       <p className="text-secondary hover:text-white text4xl font-semibold header">
         Intro
       </p>

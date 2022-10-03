@@ -8,6 +8,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.header p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 6px;
