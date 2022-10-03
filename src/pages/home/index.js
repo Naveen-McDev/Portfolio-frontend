@@ -9,13 +9,16 @@ import Projects from "./Projects";
 import LeftSidebar from "./LeftSidebar";
 import { useSelector } from "react-redux";
 
+// home component
 function Home() {
+  // destructuring the global state
   const { portfolioData } = useSelector((state) => state.root);
 
   return (
     <div>
+      {/* header component */}
       <Header />
-
+{/* if portfolio data is present */}
       {portfolioData && (
         <div className="bg-primary px-40 sm:px-5">
           <Hero />

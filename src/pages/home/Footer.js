@@ -1,5 +1,5 @@
 import React from "react";
-
+// footer component
 function Footer() {
   return (
     <div className="py-10">

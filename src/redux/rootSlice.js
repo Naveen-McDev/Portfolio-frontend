@@ -1,5 +1,7 @@
+// creating a slice
 import { createSlice } from "@reduxjs/toolkit";
 
+// rootslice
 const rootSlice = createSlice({
   name: "root",
   initialState: {
