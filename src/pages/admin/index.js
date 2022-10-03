@@ -19,6 +19,15 @@ function Admin() {
           <h1 className="text-3xl text-primary">Portfolio Admin</h1>
           <div className="w-60 h-[1px] bg-gray-500"></div>
         </div>
+        <h1
+          className="underline text-primary text-xl cursor-pointer"
+          onClick={() => {
+            localStorage.removeItem("token");
+            window.location.href = "/admin-login";
+          }}
+        >
+          Logout
+        </h1>
       </div>
       {portfolioData && (
         <div className="px-5 pb-10">
