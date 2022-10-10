@@ -25,13 +25,19 @@ function AdminProjects() {
       let response;
       // it selected item for edit is not null then edit project
       if (selectedItemForEdit) {
-        response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/portfolio/update-project`, {
-          ...values,
-          _id: selectedItemForEdit._id,
-        });
+        response = await axios.post(
+          `${process.env.REACT_APP_SERVER_URL}/api/portfolio/update-project`,
+          {
+            ...values,
+            _id: selectedItemForEdit._id,
+          }
+        );
       } else {
         // if selected item for edit is null then add project
-        response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/portfolio/add-project`, values);
+        response = await axios.post(
+          `${process.env.REACT_APP_SERVER_URL}/api/portfolio/add-project`,
+          values
+        );
       }
 
       dispatch(HideLoading());
@@ -57,9 +63,12 @@ function AdminProjects() {
     try {
       dispatch(ShowLoading());
       // deleting projects in backend
-      const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/portfolio/delete-project`, {
-        _id: item._id,
-      });
+      const response = await axios.post(
+        `${process.env.REACT_APP_SERVER_URL}/api/portfolio/delete-project`,
+        {
+          _id: item._id,
+        }
+      );
       dispatch(HideLoading());
       // if success
       if (response.data.success) {
@@ -98,7 +107,13 @@ function AdminProjects() {
             <h1 className="text-primary text-xl font-bold">{project.title}</h1>
             <hr />
             {/* image */}
-            <img src={project.image} alt="" className="h-60 w-80" />
+            <img
+              src={project.image}
+              alt=""
+              className="h-60 w-80"
+              style={{ objectFit: "cover" }}
+            />
+
             {/* description */}
             <h1>{project.description}</h1>
             <div className="flex justify-end gap-5 mt-5">
@@ -127,8 +142,7 @@ function AdminProjects() {
         ))}
       </div>
 
-
-{/* if any one is true show the modal */}
+      {/* if any one is true show the modal */}
       {(type === "add" || selectedItemForEdit) && (
         <Modal
           visible={showAddEditModal}
@@ -169,7 +183,7 @@ function AdminProjects() {
               <input placeholder="Link" />
             </Form.Item>
             {/* technologies */}
-            <Form.Item name="technologies" label="Technologies">
+            <Form.Item name="technolgies" label="Technologies">
               <input placeholder="Technologies" />
             </Form.Item>
 

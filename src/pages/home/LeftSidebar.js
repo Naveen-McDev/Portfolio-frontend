@@ -4,11 +4,11 @@ function LeftSidebar() {
   return (
     <div className="fixed left-0 bottom-0 px-10 sm:static sm:hidden">
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-[100px]">
+        <div className="flex flex-col gap-[63px]">
           {/* intro */}
           <p className=" text-gray-400 -rotate-90">Intro</p>
           {/* about */}
-          <p className=" text-gray-400 -rotate-90">About</p>
+          <p className=" mb-[35px] text-gray-400 -rotate-90">About</p>
           {/* experience */}
           <p className=" text-gray-400 -rotate-90">Experience</p>
           {/* project */}

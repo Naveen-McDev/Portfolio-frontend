@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
 import { Tabs } from "antd";
 import { useSelector } from "react-redux";
 import AdminIntro from "./AdminIntro";
@@ -15,10 +14,7 @@ function Admin() {
 
   return (
     <div>
-      {/* header component */}
-      <Header />
-
-      <div className="flex gap-10 items-center px-5 py-2 justify-between">
+      <div className="flex gap-10 items-center px-5 py-2 justify-between mt-5">
         <div className="flex gap-10 items-center">
           {/* title */}
           <h1 className="text-3xl text-primary">Portfolio Admin</h1>

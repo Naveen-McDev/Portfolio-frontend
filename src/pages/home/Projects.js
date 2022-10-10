@@ -38,13 +38,15 @@ function Projects() {
             </div>
           ))}
         </div>
-        <div className="w-[60VW] sm:w-full flex items-center justify-center gap-10 sm:flex-col">
+        <div className="w-[55VW] sm:w-full flex items-center justify-center gap-10 sm:flex-col">
           {/* image */}
           <img
             src={projects[selectedItemIndex].image}
             alt=""
             className="h-60 w-72 sm:w-full"
+            style={{ objectFit: "cover" }}
           />
+
           <div className="flex flex-col gap-5">
             {/* title */}
             <h1 className="text-secondary text-xl">
@@ -54,11 +56,16 @@ function Projects() {
             <p className="text-white sm:text-sm">
               {projects[selectedItemIndex].description}
             </p>
-            <p className="text-white text-justify sm:text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              expedita accusantium nulla ad odio quisquam consequuntur
-              laudantium saepe ratione consectetur optio necessitatibus ut,
-              impedit ducimus corrupti ullam veniam error non.
+            <p className="text-white sm:text-sm">
+              <a
+                className="text-tertiary"
+                href={projects[selectedItemIndex].link}
+              >
+                Visit App
+              </a>
+            </p>
+            <p className="text-white sm:text-sm">
+              {projects[selectedItemIndex].technolgies}
             </p>
           </div>
         </div>

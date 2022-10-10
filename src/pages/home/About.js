@@ -35,10 +35,10 @@ function About() {
         <h1 className="text-tertiary text-xl mb-10">
           Here are few technologies I've been working with recently:
         </h1>
-        <div className="flex flex-wrap justify-between gap-10 mt-5">
+        <div className="flex flex-wrap justify-between gap-5 mt-5">
           {/* mapping the skills array  */}
           {skills.map((skill, index) => (
-            <div className="border border-tertiary sm:w-[40%] sm:py-2 py-3 sm:px-5 px-10">
+            <div className="border flex justify-center items-center border-tertiary sm:w-[40%] sm:py-2 py-2 sm:px-5 px-10">
               <h1 className="text-tertiary sm:text-sm sm:text-center">
                 {skill}
               </h1>

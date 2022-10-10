@@ -8,7 +8,7 @@ function Hero() {
   const { firstName, lastName, welcomeText, description, caption } = intros;
 
   return (
-    <div className="h-[80vh] flex flex-col items-start justify-center gap-8 py-20 sm:pt-40">
+    <div className="h-[80vh] flex flex-col items-start justify-center gap-3 py-15 sm:pt-40">
       {/* welcome text */}
       <h1 className="text-white">{welcomeText || ""}</h1>
       {/* full name */}
@@ -16,7 +16,7 @@ function Hero() {
         {firstName || ""} {lastName || ""}
       </h1>
       {/* caption */}
-      <h1 className="text-7xl sm:text-3xl text-white font-semibold">
+      <h1 className="text-6xl sm:text-3xl text-white font-semibold">
         {caption || ""}
       </h1>
       {/* description */}
@@ -24,9 +24,14 @@ function Hero() {
         {description || ""}
       </p>
       {/* get Started button */}
-      <button className="border-2 border-tertiary text-tertiary px-10 py-3 rounded">
-        Get Started
-      </button>
+      <a
+        href="https://firebasestorage.googleapis.com/v0/b/files-ac663.appspot.com/o/Naveen%20M.pdf?alt=media&token=d6bec0ee-8f7f-43ab-9c44-77ef3ae5a9f9"
+        download="NaveenResume.pdf"
+      >
+        <button className="border-2 border-tertiary text-tertiary px-10 py-3 rounded">
+          View Resume
+        </button>
+      </a>
     </div>
   );
 }
