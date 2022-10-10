@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   HideLoading,

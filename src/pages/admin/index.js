@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../../components/Header";
 import { Tabs } from "antd";
 import { useSelector } from "react-redux";
