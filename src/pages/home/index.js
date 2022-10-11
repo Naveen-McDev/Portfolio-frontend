@@ -6,7 +6,7 @@ import Experiences from "./Experiences";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Projects from "./Projects";
-// import LeftSidebar from "./LeftSidebar";
+import LeftSidebar from "./LeftSidebar";
 import { useSelector } from "react-redux";
 
 // home component
@@ -27,7 +27,7 @@ function Home() {
           <Projects />
           <Contact />
           <Footer />
-          {/* <LeftSidebar /> */}
+          <LeftSidebar />
         </div>
       )}
     </div>

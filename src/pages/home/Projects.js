@@ -43,7 +43,7 @@ function Projects() {
           <img
             src={projects[selectedItemIndex].image}
             alt=""
-            className="h-60 w-72 sm:w-full"
+            className="h-60 w-72 sm:w-full lg:hidden"
             style={{ objectFit: "cover" }}
           />
 
