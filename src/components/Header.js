@@ -2,28 +2,47 @@ import React from "react";
 
 // header component
 function Header() {
+  const handleScroll = () => {
+    window.scroll(0, 0);
+  };
+
   return (
-    <div className="sm:hidden md:hidden lg:block p-5 flex justify-around items-center header bg-primary">
+    <div className="sm:hidden md:hidden lg:flex p-5 flex justify-around items-center header bg-primary">
       {/* intro */}
-      <p className="text-secondary hover:text-white text4xl font-semibold header">
+
+      <p
+        onClick={handleScroll}
+        className="text-secondary hover:text-white text4xl font-semibold header"
+      >
         Intro
       </p>
+
       {/* about */}
-      <p className="text-secondary  hover:text-white text4xl font-semibold header">
-        About
-      </p>
+      <a href="#About">
+        <p className="text-secondary  hover:text-white text4xl font-semibold header">
+          About
+        </p>
+      </a>
+
       {/* experiences */}
-      <p className="text-secondary  hover:text-white text4xl font-semibold header">
-        Experiences
-      </p>
+      <a href="#Experience">
+        <p className="text-secondary  hover:text-white text4xl font-semibold header">
+          Experience
+        </p>
+      </a>
+
       {/* projects */}
-      <p className="text-secondary  hover:text-white text4xl font-semibold header">
-        Projects
-      </p>
+      <a href="#Projects">
+        <p className="text-secondary  hover:text-white text4xl font-semibold header">
+          Projects
+        </p>
+      </a>
       {/* contacts */}
-      <p className="text-secondary  hover:text-white text4xl font-semibold header">
-        Contacts
-      </p>
+      <a href="#Contact">
+        <p className="text-secondary  hover:text-white text4xl font-semibold header">
+          Contact
+        </p>
+      </a>
     </div>
   );
 }

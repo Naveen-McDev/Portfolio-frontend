@@ -12,7 +12,7 @@ function Hero() {
       {/* welcome text */}
       <h1 className="text-white">{welcomeText || ""}</h1>
       {/* full name */}
-      <h1 className="text-secondary text-7xl font-semibold">
+      <h1 className="text-secondary text-7xl sm:text-5xl font-semibold">
         {firstName || ""} {lastName || ""}
       </h1>
       {/* caption */}
@@ -24,14 +24,21 @@ function Hero() {
         {description || ""}
       </p>
       {/* get Started button */}
-      <a
-        href="https://firebasestorage.googleapis.com/v0/b/files-ac663.appspot.com/o/Naveen%20M.pdf?alt=media&token=d6bec0ee-8f7f-43ab-9c44-77ef3ae5a9f9"
-        download="NaveenResume.pdf"
-      >
-        <button className="border-2 border-tertiary text-tertiary px-10 py-3 rounded">
-          View Resume
-        </button>
-      </a>
+      <div className="flex gap-10">
+        <a
+          href="https://firebasestorage.googleapis.com/v0/b/files-ac663.appspot.com/o/Naveen%20M.pdf?alt=media&token=d6bec0ee-8f7f-43ab-9c44-77ef3ae5a9f9"
+          download="NaveenResume.pdf"
+        >
+          <button className="border-2 border-tertiary text-tertiary px-10 py-3 rounded">
+            View Resume
+          </button>
+        </a>
+        <a href="https://github.com/Naveen-McDev">
+          <button className="border-2 border-tertiary text-tertiary px-10 py-3 rounded">
+            GitHub
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
