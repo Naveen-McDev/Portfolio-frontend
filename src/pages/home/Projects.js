@@ -60,6 +60,8 @@ function Projects() {
               <a
                 className="text-tertiary"
                 href={projects[selectedItemIndex].link}
+                target="_blank"
+                rel="noreferrer"
               >
                 Visit App
               </a>
